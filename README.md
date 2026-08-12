@@ -22,8 +22,6 @@ build step — ready for GitHub Pages.
 
 ## Still needs your input before going live
 
-- **Legal placeholder** — `privacy.html` and `terms.html` still need a "Last updated"
-  date filled in.
 - **Bug report → Jira** and **contact form** — see below.
 - **Google Analytics** — see below.
 
