@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report a Bug — Mark Book's Bookmarks</title>
+  <meta name="description" content="Report a bug in Mark Book's Recipes, Mark Book's Travels, Mark Book's Music, or this website." />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="logo-slot"></span>
+        Mark Book's Bookmarks
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="report-bug.html" class="nav-cta active">Report a Bug</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Report a Bug</h1>
+        <p>
+          Found something broken in Mark Book's Recipes, Mark Book's Travels, Mark Book's
+          Music, or on this website? Let us know below — reports go straight into our issue
+          tracker.
+        </p>
+      </div>
+    </section>
+
+    <section class="container">
+      <form id="bug-report-form" class="form-card" novalidate>
+
+        <div class="form-field">
+          <label for="app">Which app is this about?</label>
+          <select id="app" name="app" required>
+            <option value="Mark Book's Recipes">Mark Book's Recipes</option>
+            <option value="Mark Book's Travels">Mark Book's Travels</option>
+            <option value="Mark Book's Music">Mark Book's Music</option>
+            <option value="Website">This website</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="summary">Summary</label>
+          <input type="text" id="summary" name="summary" maxlength="120" placeholder="Short description of the issue" required />
+        </div>
+
+        <div class="form-field">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" placeholder="What happened? What did you expect to happen?" required></textarea>
+        </div>
+
+        <div class="form-field">
+          <label for="steps">Steps to reproduce</label>
+          <textarea id="steps" name="steps" placeholder="1. Open the app...&#10;2. Tap...&#10;3. See error"></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="severity">Severity</label>
+            <select id="severity" name="severity">
+              <option value="Low">Low — cosmetic / minor</option>
+              <option value="Medium" selected>Medium — affects usage</option>
+              <option value="High">High — blocks a feature</option>
+              <option value="Critical">Critical — app unusable / data loss</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="email">Your email (optional)</label>
+            <input type="email" id="email" name="email" placeholder="so we can follow up" />
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-accent btn-block">Submit bug report</button>
+
+        <div id="form-status" class="form-status" role="status"></div>
+
+        <p class="fallback-note">
+          Prefer email? Send details to
+          <a href="mailto:support@example.com">support@example.com</a>
+          <span class="placeholder">[ONTBREEKT — confirm support email]</span>.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-copy">© <span data-current-year></span> Mark Book's Bookmarks. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="report-bug.html">Report a Bug</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/report-bug.js"></script>
+</body>
+</html>

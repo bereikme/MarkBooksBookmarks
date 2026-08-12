@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" role="img" aria-label="Mark Book's Bookmarks logo">
+  <g transform="translate(0,10)">
+    <path d="M14,4 H62 V70 L38,52 L14,70 Z" fill="#C25E00" />
+    <polygon points="38,16 41.41,25.31 51.32,25.67 43.52,31.79 46.23,41.33 38,35.8 29.77,41.33 32.48,31.79 24.68,25.67 34.59,25.31" fill="#FFFFFF" />
+  </g>
+  <text x="88" y="44" font-family="Poppins, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="0.5" fill="#1A1A1A">MARK BOOK'S</text>
+  <text x="88" y="82" font-family="Poppins, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#C25E00">BOOKMARKS</text>
+</svg>

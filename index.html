@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mark Book's Bookmarks — Save what matters, everywhere</title>
+  <meta name="description" content="Mark Book's Bookmarks is a family of simple apps for saving recipes, travel destinations, and music: Mark Book's Recipes, Mark Book's Travels, and Mark Book's Music." />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="logo-slot">
+          <!-- Logo placeholder: drop your logo file into assets/logo/ and reference it here -->
+        </span>
+        Mark Book's Bookmarks
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="report-bug.html" class="nav-cta">Report a Bug</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">One family, three ways to bookmark</span>
+        <h1>Save what matters,<br />organize it your way.</h1>
+        <p class="lead">
+          Mark Book's Bookmarks is a small family of simple apps for saving and organizing
+          the things you don't want to lose: recipes, travel destinations, and music.
+        </p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="app-grid">
+
+        <article class="app-card recipes">
+          <div class="icon-badge">🍽️</div>
+          <div class="label">Recipes</div>
+          <h3>Mark Book's Recipes</h3>
+          <p>
+            Save recipes and dishes from anywhere on the web, tag them by cuisine or
+            occasion, and always know where a recipe came from.
+          </p>
+          <div class="app-links">
+            <a href="#">App Store</a>
+            <a href="#">Google Play</a>
+          </div>
+        </article>
+
+        <article class="app-card travels">
+          <div class="icon-badge">✈️</div>
+          <div class="label">Travel</div>
+          <h3>Mark Book's Travels</h3>
+          <p>
+            Bookmark travel destinations, hotels, and hidden gems as you find them,
+            and turn saved links into a real trip plan.
+          </p>
+          <div class="app-links">
+            <a href="#">App Store</a>
+            <a href="#">Google Play</a>
+          </div>
+        </article>
+
+        <article class="app-card music">
+          <div class="icon-badge">🎵</div>
+          <div class="label">Music</div>
+          <h3>Mark Book's Music</h3>
+          <p>
+            Keep track of albums, tracks, and artists you come across, so you never
+            lose a recommendation again.
+          </p>
+          <div class="app-links">
+            <a href="#">App Store</a>
+            <a href="#">Google Play</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="text-align:center;">
+        <h2 class="section-title">Found something that isn't working?</h2>
+        <p class="section-subtitle" style="margin-inline:auto;">
+          Let us know and we'll take a look. Every report goes straight into our issue tracker.
+        </p>
+        <a href="report-bug.html" class="btn btn-accent">Report a Bug</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-copy">© <span data-current-year></span> Mark Book's Bookmarks. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="report-bug.html">Report a Bug</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
