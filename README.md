@@ -20,6 +20,35 @@ build step — ready for GitHub Pages.
    branch and the `/ (root)` folder.
 4. Save — GitHub will publish the site at `https://<user>.github.io/<repo>/`.
 
+## Custom domain: www.markbooksbookmarks.com
+
+A `CNAME` file with `www.markbooksbookmarks.com` is already in the repo root — that's
+what tells GitHub Pages which domain to serve. Two more things need to happen outside
+this repo before it works:
+
+1. **DNS record** — at your DNS provider (wherever `markbooksbookmarks.com` is
+   registered/managed), add a `CNAME` record:
+   - Host/name: `www`
+   - Value/target: `bereikme.github.io`
+
+2. **Domain verification** (separate from the DNS record above, and easy to miss) —
+   GitHub requires you to prove ownership of the domain before it'll serve it:
+   - Go to your GitHub **account** (or organization) **Settings → Pages** →
+     "Verified domains" → add `markbooksbookmarks.com`.
+   - GitHub gives you a TXT record challenge, e.g.
+     `_github-pages-challenge-bereikme.markbooksbookmarks.com`. Add that TXT record
+     at your DNS provider, then click verify in GitHub.
+
+3. Back in the **repo's** Settings → Pages, enter `www.markbooksbookmarks.com` under
+   **Custom domain** and save. GitHub re-checks the DNS record; once it succeeds, tick
+   **Enforce HTTPS** (may take a few minutes to a few hours to become available while
+   GitHub provisions the certificate).
+
+If you also want `markbooksbookmarks.com` (no `www`) to work, add `A` records for the
+apex domain pointing at GitHub Pages' IPs (`185.199.108.153`, `185.199.109.153`,
+`185.199.110.153`, `185.199.111.153`) — GitHub Pages only serves one canonical domain
+(here, the `www` one from the `CNAME` file), so the apex domain will redirect to it.
+
 ## Still needs your input before going live
 
 - **Bug report → Jira** and **contact form** — see below.
