@@ -22,11 +22,8 @@ build step — ready for GitHub Pages.
 
 ## Still needs your input before going live
 
-- **Legal placeholder** — `privacy.html` has one highlighted `[ONTBREEKT]` placeholder
-  left (Vendisa's registered business address) plus a "Last updated" date on both
-  `privacy.html` and `terms.html`.
-- **Contact/support email** — replace `support@example.com` in `report-bug.html`,
-  `contact.html`, and `js/config.js` with the real address.
+- **Legal placeholder** — `privacy.html` and `terms.html` still need a "Last updated"
+  date filled in.
 - **Bug report → Jira** and **contact form** — see below.
 - **Google Analytics** — see below.
 

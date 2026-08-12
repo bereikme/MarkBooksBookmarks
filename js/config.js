@@ -24,6 +24,6 @@ window.MARK_BOOKS_CONFIG = {
   bugReportEndpoint: "", // TODO: set to your serverless proxy or JSM portal endpoint
   contactFormEndpoint: "", // TODO: set to your serverless proxy or form service endpoint
   jiraProjectKey: "TODO-PROJECT-KEY", // TODO: the Jira project bugs should land in
-  fallbackEmail: "support@example.com", // TODO: replace with the real support/contact address
+  fallbackEmail: "support@markbooksbookmarks.com",
   gaMeasurementId: "" // TODO: e.g. "G-XXXXXXXXXX" — leave empty to keep analytics off
 };
