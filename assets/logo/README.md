@@ -1,10 +1,10 @@
 # Logo
 
-Drop your logo file here (e.g. `logo.svg` or `logo.png`) and reference it inside the
-`.logo-slot` span in each page's header, e.g.:
+`logo.svg` in this folder is currently a generated placeholder — a "Mark Book's /
+Bookmarks" version of the "Mark Book's Recipes" reference logo, built from scratch as
+an SVG (bookmark ribbon + star icon, plus the wordmark).
 
-```html
-<span class="logo-slot">
-  <img src="assets/logo/logo.svg" alt="Mark Book's Bookmarks logo" />
-</span>
-```
+To swap in your final artwork, just replace this file (keep the name `logo.svg`, or
+update the `src="assets/logo/logo.svg"` reference in every page's `<header>` if you use
+a different filename/format). Every page points at this single file, so replacing it
+updates the whole site.

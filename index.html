@@ -16,10 +16,7 @@
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="brand">
-        <span class="logo-slot">
-          <!-- Logo placeholder: drop your logo file into assets/logo/ and reference it here -->
-        </span>
-        Mark Book's Bookmarks
+        <img src="assets/logo/logo.svg" alt="Mark Book's Bookmarks" class="brand-logo" />
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -28,6 +25,7 @@
         <a href="index.html" class="active">Home</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
         <a href="report-bug.html" class="nav-cta">Report a Bug</a>
       </nav>
     </div>
@@ -41,6 +39,7 @@
         <p class="lead">
           Mark Book's Bookmarks is a small family of simple apps for saving and organizing
           the things you don't want to lose: recipes, travel destinations, and music.
+          Everything you save is kept for your own personal use.
         </p>
       </div>
     </section>
@@ -106,16 +105,28 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-copy">© <span data-current-year></span> Mark Book's Bookmarks. All rights reserved.</div>
+      <div class="footer-copy">© <span data-current-year></span> Mark Book's Bookmarks, a product of Vendisa. All rights reserved.</div>
       <div class="footer-links">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="contact.html">Contact</a>
         <a href="report-bug.html">Report a Bug</a>
       </div>
     </div>
   </footer>
 
+  <div id="cookie-consent-banner" class="cookie-banner" hidden>
+    <div class="container cookie-banner-inner">
+      <p>We use Google Analytics to understand how visitors use this site. See our <a href="privacy.html">Privacy Policy</a>.</p>
+      <div class="cookie-banner-actions">
+        <button type="button" class="btn btn-secondary" data-consent-decline>Decline</button>
+        <button type="button" class="btn btn-primary" data-consent-accept>Accept</button>
+      </div>
+    </div>
+  </div>
+
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/analytics.js"></script>
 </body>
 </html>
